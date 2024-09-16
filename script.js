@@ -1,18 +1,39 @@
-let current = ''
-let previsous = ''
+let current = [];
+let previous = '';
+let operator = '';
 
-const numberButtons = document.querySelectorAll('numbers')
+// All number buttons
+const numberButtons = document.querySelectorAll('numbers');
 
-const divisionButton = document.getElementById('divide')
-const multiplicationButton = document.getElementById('multiply')
-const subtractionButton = document.getElementById('subtract')
-const addButton = document.getElementById('add')
-const calculateButton = document.getElementById('calculate')
-const positiveNegative = document.getElementById('positiveNegative')
+// Operator buttons
+const divisionButton = document.getElementById('divide');
+const multiplicationButton = document.getElementById('multiply');
+const subtractionButton = document.getElementById('subtract');
+const addButton = document.getElementById('add');
+const calculateButton = document.getElementById('calculate');
 
-const clearButton= document.getElementById('clear')
-const deleteButton = document.getElementById('delete')
+// Modifier elements
+const positiveNegativeButton = document.getElementById('positiveNegative');
+const clearButton = document.getElementById('clear');
+const deleteButton = document.getElementById('delete');
 
-const previousDisplay = document.getElementById('previous')
-const currentDisplay = document.getElementById('current')
+// Display elements
+const previousDisplay = document.getElementById('previous');
+const currentDisplay = document.getElementById('current');
 
+//Operator functions
+function add(a, b) {
+	return a + b;
+}
+
+function subtract(a, b) {
+	return a - b;
+}
+
+function multiply(a, b) {
+	return a * b;
+}
+
+function divide(a, b) {
+	return a * b;
+}
